@@ -12,7 +12,7 @@ export const getUser = (_id) => async (dispatch) => {
 
     return dispatch({ type: GET_USER, payload: User.data });
   } catch (error) {
-    dispatch({ type: "ERROR", payload: rror });
+    dispatch({ type: "ERROR", payload: error });
   }
 };
 
